@@ -1,4 +1,10 @@
-# Single Responsibility Principle (SRP)
+# Single Responsibility Principle (SRP):
+## Scenario
+ShopEase has a single class named OrderProcessor that does the following:
+
+      1. Calculates the total price of an order (including discounts and taxes).
+      2. Saves the order details to the database.
+      3. Sends an order confirmation email to the customer.
 
 ## Identify Responsibilities
 - **Calculate Total Price**: Computes the total cost of an order, factoring in discounts and taxes.
