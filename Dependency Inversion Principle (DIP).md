@@ -5,7 +5,7 @@ The class OrderNotifier in ShopEase directly creates an instance of EmailService
 Directly depending on `EmailService` in the `OrderNotifier` class violates the Dependency Inversion Principle because it creates a tight coupling between `OrderNotifier` and a specific implementation of notification. This makes it difficult to introduce new notification methods (like SMS) without modifying `OrderNotifier`.
 
 ## Design an Abstraction
-![DIP UML Diagram](link_to_dip_uml_diagram)
+![DIP UML Diagram](SCREENSHOTS/D.png)
 
 ## Injection Strategy
 To inject the concrete `INotificationService` into `OrderNotifier`, I would use constructor injection. The `OrderNotifier` constructor would accept an `INotificationService` parameter, allowing it to work with any implementation of the interface.
